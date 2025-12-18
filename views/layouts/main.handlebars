@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>File Uplaoder</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{#if css}}
+    <link rel="stylesheet" href="/css/{{css}}">
+    {{/if}}
+
+    {{#if sources.css}}
+        {{#each sources.css}}
+    <link rel="stylesheet" href="/css/{{this}}">
+        {{/each}}
+    {{/if}}
+
+</head>
+
+<body>
+    {{> navbar}}
+
+    {{{body}}}
+    
+    {{!-- Scripts --}}
+    <script src="https://unpkg.com/toaster-ui@1.1.5/dist/main.js"></script>
+
+    {{#if sources.js}}
+    {{#each sources.js}}
+        <script type="text/javascript" src="/js/{{this}}"></script>
+    {{/each}}
+    {{/if}}
+</body>
+
+</html>

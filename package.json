@@ -1,0 +1,28 @@
+{
+  "name": "downlaoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.ts",
+  "scripts": {
+    "dev": "tsx --watch ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@types/express-handlebars": "^5.3.1",
+    "@types/multer": "^2.0.0",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.4",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

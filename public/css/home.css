@@ -1,0 +1,125 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main .uploader {
+  margin-top: 30px;
+  width: 40%;
+  background-color: #939f5c;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.main .uploader h1 {
+  color: #e2f9b8;
+}
+
+.main .uplaod-file {
+  width: 100%;
+  margin-top: 20px;
+  border: 3px dashed #e2f9b8;
+}
+
+.main .uplaod-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+.main .uplaod-file img {
+  opacity: 0.9;
+  width: 120px;
+}
+
+.main .uplaod-file .info-text {
+  color: #e2f9b8;
+  text-align: center;
+}
+
+.main .uplaod-file .info-text .browse {
+  color: #cdfd40;
+}
+.main .uplaod-file .info-text .browse:hover {
+  text-decoration: underline;
+}
+
+.main .uplaod-file #file-uplaod-input {
+  display: none;
+}
+
+/* File status container */
+.main .file-status {
+  margin-top: 20px;
+}
+
+/* Individual file container */
+.main .file-status .file {
+  background-color: #d6e7a7;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* File name */
+.main .file-status .file span:first-child {
+  font-weight: bold;
+  color: #4b5a20;
+}
+
+/* Progress bar container */
+/* Progress bar container */
+.main .file-status .file .progress-bar {
+  width: 100%;
+  background-color: #c8e78d;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+}
+
+/* Progress fill */
+.main .file-status .file .progress-bar .progress-fill {
+  height: 100%;
+  /* width: 0%; dynamic width can be set via inline style or JS */
+  background-color: #4b733c;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.main .file-status .file .progress {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #3b4d1c;
+}
+
+/* Hover effect for file card */
+.main .file-status .file:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Uploader hover effect */
+.main .uplaod-file:hover {
+  background-color: #a4b45f;
+  transition: background-color 0.3s ease;
+}
+
+/* Drag over effect */
+.main .uplaod-file.dragover {
+  border-color: #cdfd40;
+  background-color: #b7d167;
+}
+
+/* Browse text cursor */
+.main .uplaod-file .info-text .browse {
+  cursor: pointer;
+}
