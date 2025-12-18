@@ -40,7 +40,7 @@ const formatFiles = (files) => {
   const formatFiles = [];
   Array.from(files).forEach((f) => {
     let file = { file: f };
-    file.id = crypto.randomUUID().split("-").slice(0, 4).join("-");
+    file.id = generateUUID();
     file.status = { uploadStart: false, uploadedBytes: 0, isUploaded: false };
     formatFiles.push(file);
   });
