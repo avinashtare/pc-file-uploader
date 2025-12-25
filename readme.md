@@ -32,5 +32,5 @@ Ideal for developers who want to quickly transfer files from a phone, tablet, or
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/avinashtare/pc-file-uploader
    ```
